@@ -10,6 +10,8 @@ body {
     width: 100%;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
+    align-items: center;
+    justify-content: space-between; /* Default alignment for larger screens */
 }
 
 /* Mobile responsiveness */
@@ -84,7 +86,7 @@ body {
 }
 .glyphicon,.fab{
     color: black;
-    font-size: 16px;
+    font-size: 20px;
 }
 .erg {
     text-align: center !important;
@@ -128,7 +130,7 @@ body {
 
 .adc {
     color: black;
-    font-size: 16px;
+    font-size: 18px;
 }
 .eg{
     margin-top: 10px;
