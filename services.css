@@ -1,0 +1,349 @@
+/* Prevent overflow on all screens */
+body {
+    margin: 0;
+    overflow-x: hidden;  /* Prevent horizontal scrolling */
+    box-sizing: border-box;  /* Include padding and border in element width calculations */
+}
+.header {
+    background: #fff;
+    padding: 15px 5%;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Default alignment for larger screens */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center; /* Center text elements */
+        justify-content: center; /* Center content */
+        padding: 10px 3%;
+    }
+}
+/* Navbar Container */
+.navbar {
+    background-color: #c32a2c;
+    padding: 15px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.nav-links li {
+    position: relative;
+    padding: 10px 15px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Remove default link styles */
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+    color: black; /* Highlight color on hover */
+}
+
+
+.pickup-btn {
+    background: #c32a2c;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    align-items: end;
+    border-radius: 15px;
+    height: 40px;
+    width: 250px;
+    text-align: center;
+}
+.pickup-btn:hover{
+    background-color: black;
+    color:white;
+    transition: all .3s linear;
+}
+.logo img {
+    height: 80px;
+}
+.logo {
+    display: flex;
+    align-items: left; /* Aligns items vertically */
+    gap: 10px; /* Adds space between logo and text */
+}
+.ef{
+    font-size: 16px;
+}
+.text {
+    display: flex;
+    flex-direction: column; /* Stacks text elements vertically */
+}
+.glyphicon,.fab{
+    color: black;
+    font-size: 20px;
+}
+.adc {
+    color: black;
+    font-size: 18px;
+}
+.eg{
+    margin-top: 10px;
+}
+.abc{
+    background-color: #000;
+    color: white;
+    width: 1385px;
+}
+.al{
+    font-size: 16px;
+}
+.am{
+    font-size: 20px;
+}
+.aef{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.an{
+    text-align: center;
+}
+.services-section {
+    text-align: center;
+    padding: 20px 0;
+    max-width: 1350px;
+    margin: 0 auto; /* Centers the section */
+}
+
+.services-section h2 {
+    font-size: 36px;
+    font-family: Garamond, serif;
+    margin-bottom: 20px; /* Add spacing between title and text */
+}
+
+.services-section p {
+    font-size: 24px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-bottom: 20px; /* Add spacing between description and service boxes */
+}
+
+/* Service Boxes Section */
+.service-box {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 550px; /* Fixed width for larger screens */
+    transition: all 0.3s ease-in-out; /* Smooth transition for resizing */
+}
+
+.service-box img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-box .content {
+    padding: 20px;
+    width: 60%;
+}
+
+.service-box h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.service-box p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .services-section p {
+        font-size: 18px; /* Decrease font size on smaller screens */
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .service-box {
+        flex-direction: column; /* Stack the service box content vertically */
+        width: 100%; /* Make service boxes full width */
+        height: auto; /* Adjust height to auto for better flexibility */
+    }
+
+    .service-box img {
+        width: 100%; /* Make the image take full width */
+        height: 200px; /* Adjust height for mobile */
+        object-fit: cover;
+    }
+
+    .service-box .content {
+        width: 100%; /* Make the content take full width */
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .service-box h3 {
+        font-size: 18px; /* Smaller heading size */
+    }
+
+    .service-box p {
+        font-size: 12px; /* Smaller text for readability */
+    }
+
+    /* Title styling on mobile */
+    .services-section h2 {
+        font-size: 28px; /* Reduce font size for better readability */
+    }
+}
+
+@media (max-width: 480px) {
+    .services-section p {
+        font-size: 16px; /* Further reduce font size */
+    }
+
+    .service-box h3 {
+        font-size: 16px; /* Reduce heading size further */
+    }
+
+    .service-box p {
+        font-size: 12px; /* Reduce description text size further */
+    }
+}
+
+/* Footer Section */
+.footer {
+    position: relative;
+    background: url('Images/56.jpeg') center/cover no-repeat;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+
+/* Dark Overlay */
+.footer .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(128, 0, 0, 0.8); /* Dark Red Overlay */
+}
+
+/* Footer Content */
+.footer-content {
+    position: relative;
+    z-index: 2;
+    width: 80%;
+    margin: auto;
+}
+
+/* Info Boxes */
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.info-box {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+}
+
+.info-box i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Call Section */
+.call-section {
+    margin-top: 20px;
+}
+
+.call-section a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-info {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.edf{
+    font-size: 34px;
+}
+.asd{
+    font-size: 30px;
+}
+.you{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.about{
+    position: relative;
+    background: url('Images/56.jpeg') center/cover no-repeat;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+.about .overlay3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(128, 0, 0, 0.8); /* Dark Red Overlay */
+}
+.about-content{
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    margin: auto;
+}
+.yr{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+}
