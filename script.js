@@ -686,16 +686,3 @@ window.onload = function () {
 function navigateTo(page) {
     window.location.href = page;
 }
-document.addEventListener("scroll", function () {
-    let scrollPosition = window.scrollY; // Get vertical scroll position
-
-    document.querySelectorAll(".parallax").forEach(img => {
-        let direction = parseFloat(img.getAttribute("data-direction")) || 1; // Get movement direction
-        let moveAmount = scrollPosition * direction * 0.3; // Adjust movement speed
-
-        // Prevent excessive movement to keep images visible
-        moveAmount = Math.max(-200, Math.min(200, moveAmount));
-
-        img.style.transform = `translateX(${moveAmount}px)`;
-    });
-});
