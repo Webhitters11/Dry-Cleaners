@@ -457,6 +457,42 @@ body {
     font-size: 14px;
     color: #555;
 }
+@media (max-width: 576px) {
+    /* Make each column full width on mobile */
+    .col-md-6 {
+      width: 100%;
+      padding: 0 15px; /* Adds some horizontal padding */
+      box-sizing: border-box;
+    }
+  
+    /* Ensure the service box fits its container */
+    .service-box {
+      width: 90% !important;
+      margin-bottom: 20px;
+    }
+  
+    /* Make service images responsive */
+    .service-box img {
+      width: 100%;
+      height: auto; /* Let the height adjust automatically */
+      max-height: 180px; /* Optional: limit image height if needed */
+    }
+  
+    /* Adjust text sizes for readability */
+    .service-box h3 {
+      font-size: 20px;
+    }
+  
+    .service-box p {
+      font-size: 14px;
+    }
+  
+    .service-box .read-more {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+  
 .read-more {
     color:#c32a2c;
     font-weight: bold;
@@ -932,6 +968,10 @@ body {
     padding: 15px;
     border-top: 1px solid #ddd;
 }
+.hut{
+    height: 500px;
+    width: 450px;
+}
 .whats-app {
     position: fixed;
     width: 60px;
@@ -948,4 +988,16 @@ body {
 }
 .my-float {
     margin-top: 16px;
+}
+@media (max-width: 768px){
+    .whats-app {
+        display:none;
+    }
+    .hut{
+        height: 300px;
+        width: 250px;
+    }
+    .bad{
+        width: 350px;
+    }
 }
