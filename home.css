@@ -553,7 +553,7 @@ body {
     width: 80%;
     max-width: 400px; /* Limit max width for better mobile responsiveness */
 }
-.col-md-6 {
+.aew{
     max-width: 500px; /* Restricts width on larger screens */
     width: 90%; /* Adjusts width for smaller screens */
     margin: 0 auto; /* Centers the div */
