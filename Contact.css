@@ -25,9 +25,12 @@ body {
 /* Navbar Container */
 .navbar {
     background-color: #c32a2c;
-    padding: 15px 0;
+    padding: 15px;
     text-align: center;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
 /* Navigation Links */
@@ -40,6 +43,7 @@ body {
     justify-content: center;
 }
 
+/* Navigation List Items */
 .nav-links li {
     position: relative;
     padding: 10px 15px;
@@ -56,29 +60,52 @@ body {
 }
 
 .nav-links li a:hover {
-    color: black; /* Highlight color on hover */
+    color: black;
 }
 
-/* Responsive Fixes */
+/* Hide menu icon on desktop */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive: Mobile View */
 @media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show menu icon */
+    }
+
     .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Hide menu initially */
+        width: 250px;
+        height: 100%;
+        background: #c32a2c;
         flex-direction: column;
         align-items: center;
+        padding-top: 50px;
+        transition: right 0.3s ease-in-out;
+        z-index: 9999;
     }
-    
+
     .nav-links li {
         display: block;
         width: 100%;
-        text-align: center;
-    }
-}
-
-@media (max-width: 576px) {
-    .nav-links {
-        flex-direction: column;
-        text-align: center;
+        text-align: left;
+        padding: 15px;
     }
 
+    .nav-links li a {
+        font-size: 18px;
+        display: block;
+    }
+
+    .nav-links.show {
+        right: 0; /* Slide in the menu */
+    }
 }
 .logo {
     display: flex;
@@ -285,4 +312,9 @@ body {
 }
 .my-float {
     margin-top: 16px;
+}
+@media (max-width: 768px){
+    .whats-app {
+        display:none;
+    }
 }

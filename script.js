@@ -1,7 +1,19 @@
+// Function to toggle the menu
 function toggleMenu() {
     const navMenu = document.getElementById("navMenu");
     navMenu.classList.toggle("show");
 }
+
+// Close the menu if clicked outside of it
+document.addEventListener("click", function(event) {
+    const navMenu = document.getElementById("navMenu");
+    const menuToggle = document.querySelector(".menu-toggle");
+    
+    // Check if the click is outside the navMenu or the menuToggle (hamburger icon)
+    if (!navMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+        navMenu.classList.remove("show");
+    }
+});
 
 document.addEventListener("DOMContentLoaded", function () {
     const videoPopup = document.querySelector(".video-popup");
