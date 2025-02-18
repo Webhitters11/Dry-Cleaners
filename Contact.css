@@ -3,7 +3,8 @@ body {
     margin: 0;
     overflow-x: hidden;  /* Prevent horizontal scrolling */
     box-sizing: border-box;  /* Include padding and border in element width calculations */
-}.header {
+}
+.header {
     background: #fff;
     padding: 15px 5%;
     width: 100%;
@@ -149,7 +150,7 @@ body {
 }
 .adc {
     color: black;
-    font-size: 18px;
+    font-size: 14px;
 }
 .eg{
     margin-top: 10px;
