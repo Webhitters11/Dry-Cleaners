@@ -1,3 +1,8 @@
+function toggleMenu() {
+    const navMenu = document.getElementById("navMenu");
+    navMenu.classList.toggle("show");
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     const videoPopup = document.querySelector(".video-popup");
     const closeBtn = document.querySelector(".close-btn");
