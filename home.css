@@ -995,10 +995,9 @@ body {
         display:none;
     }
     .hut{
-        height: 300px;
-        width: 250px;
+        display: none;
     }
     .bad{
-        width: 350px;
+        width: 100%;
     }
 }
