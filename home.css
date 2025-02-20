@@ -997,7 +997,14 @@ body {
     .hut{
         display: none;
     }
+    .text{
+        display: none;
+    }
     .bad{
         width: 90%;
+    }
+    .logo{
+        text-align:center;
+        justify-content: center;
     }
 }
