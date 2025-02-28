@@ -13,7 +13,18 @@ body {
     align-items: center;
     justify-content: space-between; /* Default alignment for larger screens */
 }
-
+.email h5{
+    color: #333;
+}
+.contact-form input{
+    padding: 20px 40px;
+    font-size: 16px;
+}
+.control-group textarea{
+    padding: 20px 40px;
+    resize: none;
+    font-size: 16px;
+}
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     .header {
@@ -144,6 +155,10 @@ body {
 .logo img {
     height: 80px;
 }
+.fa-location-dot,.fa-envelope,.fa-phone{
+    font-size: 30px;
+    color: #c32a2c;
+}
 .glyphicon,.fab{
     color: black;
     font-size: 20px;
@@ -187,38 +202,55 @@ body {
 .an{
     text-align: center;
 }
-/* Footer Section */
-.footer {
-    position: relative;
-    background: url('Images/56.jpeg') center/cover no-repeat;
-    padding: 50px 0;
-    text-align: center;
+
+
+.footer{
+    padding: 60px 10px;
+    background: #000;
+}
+
+.left p{
+    font-size: 16px;
+    line-height: 22px;
+    padding-top: 20px;
+    color: #fff;
+}
+.left ul{
+    list-style: none;
+}
+.left ul li:first-child{
+    font-size: 16px;
+    font-weight: 700;
+    color: #c32a2c;
+    padding-bottom:20px ;
+}
+.left ul li{
+    color: #fff;
+    font-size: 14px;
+}
+.left ul li .fa-solid,.fa-brands{
+    color: #c32a2c;
+    padding-right:10px ;
+}
+.footer-address-desc{
+    font-weight: 600;
+}
+.fa-brands{
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.left ul li a{
     color: white;
+    text-decoration: none;
+    font-weight: 600;
 }
-
-/* Dark Overlay */
-.footer .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(128, 0, 0, 0.8); /* Dark Red Overlay */
-}
-
-/* Footer Content */
-.footer-content {
-    position: relative;
-    z-index: 2;
-    width: 80%;
-    margin: auto;
-}
-
-/* Info Boxes */
-.footer-info {
+.social-icons {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: start;
+}
+.social-icons .fa-brands:hover {
+   color: #fff;
 }
 
 .info-box {
@@ -300,17 +332,14 @@ body {
 }
 .whats-app {
     position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
+    bottom: 20px;
     right: 15px;
-    background-color: #25d366;
-    color: #FFF;
     border-radius: 50px;
     text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
     z-index: 100;
+}
+.whats-app img{
+    width: 50px;
 }
 .my-float {
     margin-top: 16px;
