@@ -188,6 +188,8 @@ body {
 }
 .left ul{
     list-style: none;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 .left ul li:first-child{
     font-size: 16px;
@@ -415,8 +417,13 @@ body {
 }
 .choose-list{
     padding-top: 30px;
+    
     display: flex;
     justify-content: space-between;
+}
+.choose-list ul{
+    margin: 0 !important;
+    padding: 0 !important;
 }
 .choose-list ul li{
     list-style: none;
@@ -630,5 +637,20 @@ body {
     .logo{
         text-align:center;
         justify-content: center;
+    }
+    .list-btn button{
+        width: 100%;
+        background: #c32a2c;
+        color: white;
+        border: none;
+        padding: 7px 35px;
+        font-size: 18px;
+        margin-right: 20px;
+        font-weight: 600;
+    }
+    .choose-list{
+        padding-top: 30px;
+        display: block;
+        padding-bottom: 30px;
     }
 }
