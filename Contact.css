@@ -233,6 +233,7 @@ body {
 .left ul li .fa-solid,.fa-brands{
     color: #c32a2c;
     padding-right:10px ;
+    font-size: 15px;
 }
 .footer-address-desc{
     font-weight: 600;

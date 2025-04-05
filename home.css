@@ -1204,3 +1204,44 @@ body {
         justify-content: center !important;
     }
 }
+.carousel-wrap {
+    margin: 90px auto;
+    padding: 0 5%;
+    width: 80%;
+    position: relative;
+}
+
+/* Fix blank or flashing items on carousel */
+.owl-carousel .item {
+    position: relative;
+    z-index: 100;
+    -webkit-backface-visibility: hidden;
+}
+
+/* Owl Navigation */
+.owl-nav>div {
+    margin-top: -26px;
+    position: absolute;
+    top: 50%;
+    color: #cdcbcd;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.owl-nav .owl-prev {
+    left: -30px;
+}
+
+.owl-nav .owl-next {
+    right: -30px;
+}
+
+.owl-nav i {
+    font-size: 32px;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
